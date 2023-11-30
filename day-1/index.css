@@ -3,8 +3,10 @@
     --bright-red: #D42D2F;
     --dark-green: #344D2F;
     --light-green: #77A047;
+    --light-blue: #ADD8E6;
     --gold: #FAC57D;
     --snow: #F0F4F7;
+    font-family: 'Mountains of Christmas', serif;
   }
   
 html, body {
@@ -48,7 +50,7 @@ body {
 }
 
 .new-year-background {
-    background: var(--gold);
+    background: var(--light-blue);
 }
 
 @media (min-width: 768px) {

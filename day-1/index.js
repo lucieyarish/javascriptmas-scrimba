@@ -5,7 +5,6 @@ const newYearCountdownContainer = document.getElementById(
   'new-year-countdown-container'
 );
 
-const date = new Date();
 const christmasDay = new Date(2023, 11, 25);
 const newYear = new Date(2023, 11, 31);
 
@@ -31,6 +30,7 @@ const renderCountdown = (container, timeRemaining) => {
 };
 
 const getRemainingTime = (countdownEnd) => {
+  const date = new Date();
   let difference = new Date(countdownEnd.getTime() - date.getTime());
 
   let days = difference.getUTCDate() - 1;
@@ -53,4 +53,6 @@ const renderCountdowns = () => {
   renderCountdown(newYearCountdownContainer, newYearRemainingTime);
 };
 
-setInterval(renderCountdowns, 100);
+setInterval(() => {
+  renderCountdowns();
+}, 100);
