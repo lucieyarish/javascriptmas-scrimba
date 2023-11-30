@@ -7,39 +7,54 @@
     --snow: #F0F4F7;
   }
   
-  html, body {
-      margin: 0;
-      padding: 0;
-  }
+html, body {
+    margin: 0;
+    padding: 0;
+}
   
-  p {
-      font-size: 4rem;
-      margin: 0;
-  }
+p {
+    font-size: 3rem;
+    margin: 0;
+}
   
-  .text-s {
-      font-size: 1.2rem;
-      text-transform: uppercase;
-      font-weight: lighter;
-  }
-  
-  body {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      text-align: center;
-      color: var(--dark-green);
-      background-color: var(--snow);
-  }
-  
-  .container {
-      display: flex;
-      flex-direction: column;
-      background: var(--wine-red);
-      color: var(--snow);
-      padding: 1em 2em;
-      border-radius: 5px;
-      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
-  }
+.text-s {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: var(--dark-green);
+    background-color: var(--snow);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 1em 2em;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.christmas-container {
+    color: var(--snow);
+    background: var(--wine-red);
+}
+
+.new-year-background {
+    background: var(--gold);
+}
+
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 2em;
+    }
+}

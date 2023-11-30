@@ -1,32 +1,37 @@
-const countdownContainer = document.getElementById('countdown-container');
+const christmasCountdownContainer = document.getElementById(
+  'christmas-countdown-container'
+);
+const newYearCountdownContainer = document.getElementById(
+  'new-year-countdown-container'
+);
 
-const renderCountdown = () => {
-  const timeRemaining = calculateRemainingTime();
+const date = new Date();
+const christmasDay = new Date(2023, 11, 25);
+const newYear = new Date(2023, 11, 31);
 
-  countdownContainer.innerHTML = `
-        <div class="flex">
+const renderCountdown = (container, timeRemaining) => {
+  container.innerHTML = `
+        <div>
             <p>${timeRemaining.days}</p>
             <p class="text-s">days</p>
+        </div>
         <div>
-        <div class="flex">
             <p>${timeRemaining.hours}</p>
             <p class="text-s">hours</p>
+        </div>
         <div>
-        <div class="flex">
             <p>${timeRemaining.minutes}</p>
             <p class="text-s">minutes</p>
+        </div>
         <div>
-        <div class="flex">
             <p>${timeRemaining.seconds}</p>
             <p class="text-s">seconds</p>
-        <div>
+        </div>
     `;
 };
 
-const calculateRemainingTime = () => {
-  const date = new Date();
-  const countdownEndDate = new Date(2023, 12, 25);
-  let difference = new Date(countdownEndDate.getTime() - date.getTime());
+const getRemainingTime = (countdownEnd) => {
+  let difference = new Date(countdownEnd.getTime() - date.getTime());
 
   let days = difference.getUTCDate() - 1;
   let hours = difference.getHours();
@@ -41,8 +46,11 @@ const calculateRemainingTime = () => {
   };
 };
 
-renderCountdown();
+const renderCountdowns = () => {
+  const christmasRemainingTime = getRemainingTime(christmasDay);
+  const newYearRemainingTime = getRemainingTime(newYear);
+  renderCountdown(christmasCountdownContainer, christmasRemainingTime);
+  renderCountdown(newYearCountdownContainer, newYearRemainingTime);
+};
 
-window.setTimeout(function () {
-  window.location.reload();
-}, 5000);
+setInterval(renderCountdowns, 100);
