@@ -1,0 +1,96 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--body-bg);
+}
+
+:root {
+    --font-family: 'Roboto', sans-serif;
+    --body-bg: #111114;
+    --container-bg: #B11E31;
+    --text-white: #FFF;
+    --btn-bg: #FCFBF4;
+    --btn-bg-hover: #fff;
+}
+
+.title {
+    font-size: 3rem;
+    margin-bottom: 0.75em;
+    text-transform: uppercase;
+}
+
+.text-bold {
+    font-weight: 500;
+}
+
+.result-container p {
+    margin: 0;
+    padding-top: 1em;
+}
+
+.total {
+    font-size: 1.5rem;
+    margin-top: 1.5em;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.container {
+    background: var(--container-bg);
+    color: var(--text-white);
+    font-family: var(--font-family);
+    border-radius: 20px;
+    padding: 2em 3em 4em 3em;
+    max-width: 900px;
+    margin: 14em auto;
+}
+
+.counter-container-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-img {
+    width: 350px;
+    border-radius: 20px;
+    margin-left: 3em;
+    display: block;
+}
+
+label {
+    font-size: 1.5rem;
+}
+
+input {
+    font-size: 1.25rem;
+    display: block;
+    border: none;
+    outline-color: var(--btn-bg-hover);
+    border-radius: 10px;
+    padding: 0.5em 1em;
+    margin: 0.6em 0;
+}
+
+.btn-primary {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 1.5rem;
+    background: var(--btn-bg);
+    border: none;
+    outline-color: var(--btn-bg-hover);
+    border-radius: 5px;
+    text-transform: uppercase;
+    padding: 0.5em 1em;
+    margin-top: 1em;
+}
+
+.btn-primary:hover {
+    background: var(--btn-bg-hover);
+}
+
