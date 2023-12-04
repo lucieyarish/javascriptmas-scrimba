@@ -31,3 +31,10 @@ calcTotalCandies(3, 10); // expected output: 9
 calcTotalCandies(4, 20); // expected output: 20
 calcTotalCandies(6, 25); // expected output: 24
 ```
+
+## Day 4
+
+- Use AI to generate a one-line Christmas joke
+- When clicked, the doors should open to reveal a festive joke.
+
+The solution to Day 4 is
