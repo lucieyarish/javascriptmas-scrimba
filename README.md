@@ -37,4 +37,4 @@ calcTotalCandies(6, 25); // expected output: 24
 - Use AI to generate a one-line Christmas joke
 - When clicked, the doors should open to reveal a festive joke.
 
-The solution to Day 4 is
+The solution to Day 4 is available here as Scrim: https://scrimba.com/scrim/co5a24fa494cd1c38e2eb9292
