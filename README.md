@@ -2,7 +2,7 @@
 
 🎄 This repository contains my solution to the JavaScriptmas challenge organized by Scrimba
 
-## Day 1
+## Day 1: Countdown to Christmas
 
 - Get today's date (you only need the day)
 - Calculate remaining days
@@ -13,12 +13,12 @@ Stretch goals:
 - Display hours, minutes, seconds
 - Add a countdown for another festival, your birthday, or Christmas 2022
 
-## Day 2
+## Day 2: Style a Colorful Button
 
 - Add 115deg gradient border with the provided colors, or choose your own
 - Hover state: gradient colors flip horizontally, btn grows slightly in size, and the text changes from grey to white
 
-## Day 3
+## Day 3: Divide Candy
 
 - Find the total number of pieces of candy the children can eat
 - Example:
@@ -32,9 +32,15 @@ calcTotalCandies(4, 20); // expected output: 20
 calcTotalCandies(6, 25); // expected output: 24
 ```
 
-## Day 4
+## Day 4: AI Christmas Joke Generator
 
 - Use AI to generate a one-line Christmas joke
 - When clicked, the doors should open to reveal a festive joke.
 
 The solution to Day 4 is available here as Scrim: https://scrimba.com/scrim/co5a24fa494cd1c38e2eb9292
+
+## Day 5: Flashcard Flip
+
+- Card has two sides, and flips from front to back on hover
+- Match styles as closely as you can
+- Use CSS only
