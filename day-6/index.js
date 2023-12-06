@@ -12,8 +12,6 @@ generateBtn.addEventListener('click', () => {
 const renderTemplate = (obj) => {
   const list = document.createElement('ul');
 
-  console.log(Object.keys(obj).length);
-
   if (Object.keys(obj).length === 1) {
     userInput.value = '';
     generatedResult.innerHTML = '';
@@ -26,8 +24,6 @@ const renderTemplate = (obj) => {
       liEl.textContent = `🎅🏽 ${key}: ${value}`;
       list.append(liEl);
     }
-
-    console.log(list);
 
     if (list.childElementCount > 0) {
       userInput.value = '';
@@ -70,7 +66,6 @@ const assignValues = (obj, arr) => {
 
 const generateSecretSantaPairs = (arr) => {
   const shuffledInputArr = shuffleArr(arr);
-  console.log(shuffledInputArr);
 
   const secretSantas = shuffledInputArr.reduce((key, val) => {
     return { ...key, [val]: '' };
