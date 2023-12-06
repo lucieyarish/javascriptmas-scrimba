@@ -25,7 +25,7 @@ h2 {
 }
 
 .container {
-    margin: 1em auto;
+    margin: 2em auto;
     color: var(--white);
     min-width: 500px;
 }
@@ -53,13 +53,13 @@ label {
 }
 
 .user-input {
-    font-size: 1.3rem;
-    padding: 2em 2em;
-    /* outline: 4px solid var(--forest-green); */
+    font-size: 1.5rem;
+    padding: 2em 3em;
     outline: var(--white);
     resize: none;
     border-radius: 5px;
     margin-bottom: 1em;
+    font-family: inherit;
 }
 
 .generate-btn {
