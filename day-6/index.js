@@ -79,16 +79,3 @@ const generateSecretSantaPairs = (arr) => {
 
   return secretSantas;
 };
-
-/**
-Example output:
-{
-    Alice: "Dan",
-    Bob: "Ferdinand",
-    Carly: "Ed",
-    Dan: "Alice",
-    Ed: "Ginny",
-    Ferdinand: "Bob",
-    Ginny: "Carly"
-}
- */
