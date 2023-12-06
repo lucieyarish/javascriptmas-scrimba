@@ -44,3 +44,5 @@ The solution to Day 4 is available here as Scrim: https://scrimba.com/scrim/co5a
 - Card has two sides, and flips from front to back on hover
 - Match styles as closely as you can
 - Use CSS only
+
+## Day 6: Secret Santa Generator

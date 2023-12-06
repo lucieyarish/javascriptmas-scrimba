@@ -1,0 +1,24 @@
+body, html { 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    background: var(--cranberry-red);
+}
+
+:root {
+    --cranberry-red: #A60A3D;
+    --white: #FFF;
+}
+
+h1 {
+    font-size: 3rem;
+    padding: 2em 4em;
+}
+
+.container {
+    margin: 8em auto;
+    color: var(--white);
+    min-width: 500px;
+}
