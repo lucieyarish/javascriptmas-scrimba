@@ -1,13 +1,47 @@
 const userInput = document.getElementById('user-input');
 const generateBtn = document.getElementById('generate-btn');
-
-// const people = ['Alice', 'Bob', 'Carly', 'Dan', 'Ed', 'Ferdinand', 'Ginny'];
-let userInputArr;
+const generatedResult = document.getElementById('generated-result');
 
 generateBtn.addEventListener('click', () => {
   const inputArr = userInput.value.split(',');
-  userInputArr = [...inputArr];
+  const userInputArr = [...inputArr];
+  const secretSantas = generateSecretSantaPairs(userInputArr);
+  renderTemplate(secretSantas);
 });
+
+const renderTemplate = (obj) => {
+  const list = document.createElement('ul');
+
+  console.log(Object.keys(obj).length);
+
+  if (Object.keys(obj).length === 1) {
+    userInput.value = '';
+    generatedResult.innerHTML = '';
+    generatedResult.innerHTML += `
+        <h2>Please add more people into your list!</h2>
+    `;
+  } else {
+    for (const [key, value] of Object.entries(obj)) {
+      const liEl = document.createElement('li');
+      liEl.textContent = `🎅🏽 ${key}: ${value}`;
+      list.append(liEl);
+    }
+
+    console.log(list);
+
+    if (list.childElementCount > 0) {
+      userInput.value = '';
+      generatedResult.innerHTML = '';
+
+      const html = `
+              <h2>Your Secret Santas:</h2>
+            `;
+
+      generatedResult.innerHTML += html;
+      generatedResult.append(list);
+    }
+  }
+};
 
 const shuffleArr = (arr) => {
   for (let i = arr.length - 1; i > 0; i--) {
@@ -35,6 +69,7 @@ const assignValues = (obj, arr) => {
 
 const generateSecretSantaPairs = (arr) => {
   const shuffledInputArr = shuffleArr(arr);
+  console.log(shuffledInputArr);
 
   const secretSantas = shuffledInputArr.reduce((key, val) => {
     return { ...key, [val]: '' };
@@ -44,8 +79,6 @@ const generateSecretSantaPairs = (arr) => {
 
   return secretSantas;
 };
-
-console.log(generateSecretSantaPairs(userInput));
 
 /**
 Example output:

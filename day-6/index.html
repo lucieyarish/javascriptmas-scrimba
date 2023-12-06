@@ -10,8 +10,13 @@
     <body>
         <div class="container">
             <h1>Secret Santa Generator</h1>
-            <input id="user-input" type="text">
-            <button id="generate-btn">Generate Secret Santas</button>
+            <div class="generator-container">
+                <label for="user-input">Insert comma-separated names:</label>
+                <textarea id="user-input" class="user-input" resize></textarea>
+                <button id="generate-btn" class="generate-btn">Generate Secret Santas</button>
+            </div>
+            <div id="generated-result" class="generated-result">
+            </div>
         </div>
         <script src="index.js"></script>
     </body>

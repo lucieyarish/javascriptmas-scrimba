@@ -46,3 +46,10 @@ The solution to Day 4 is available here as Scrim: https://scrimba.com/scrim/co5a
 - Use CSS only
 
 ## Day 6: Secret Santa Generator
+
+- Write a function to randomly assign each person in an array a "Secret Santa", who is someone else in the array
+- No one should be assigned themselves as their own Secret Santa
+
+Stretch goals:
+
+- Create a UI with a button to trigger your Secret Santa function and display the results

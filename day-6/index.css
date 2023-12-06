@@ -10,15 +10,84 @@ body, html {
 :root {
     --cranberry-red: #A60A3D;
     --white: #FFF;
+    --forest-green: #014421; 
+    --green-lighter: #06562c; 
+    --christmas-yellow: #06562c;
 }
 
 h1 {
     font-size: 3rem;
-    padding: 2em 4em;
+    padding: 0.5em;
+}
+
+h2 {
+    font-size: 2.5rem;
 }
 
 .container {
-    margin: 8em auto;
+    margin: 1em auto;
     color: var(--white);
     min-width: 500px;
+}
+
+.generator-container,
+.generated-result {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.generator-container {
+    max-width: 400px;
+}
+
+.generated-result {
+    margin: 1em;
+    max-width: 500px;
+}
+
+label {
+    font-size: 1.5rem;
+    margin-bottom: 1em;
+}
+
+.user-input {
+    font-size: 1.3rem;
+    padding: 2em 2em;
+    /* outline: 4px solid var(--forest-green); */
+    outline: var(--white);
+    resize: none;
+    border-radius: 5px;
+    margin-bottom: 1em;
+}
+
+.generate-btn {
+    font-size: 1.5rem;
+    padding: 0.5em 0;
+    border-radius: 5px;
+    background: var(--green-lighter);
+    border: none;
+    color: var(--white);
+}
+
+.generate-btn:hover,
+.generate-btn:active {
+    background: var(--forest-green);
+}
+
+ul {
+    list-style: none;
+}
+
+.generated-result h2 {
+    margin-top: 0.5em;
+    margin-bottom: 0;
+}
+
+li {
+    font-size: 2rem;
+    margin-left: 1em;
+    margin-top: 0.5em;
+    text-align: left;
 }
