@@ -58,7 +58,8 @@ const assignValues = (obj, arr) => {
   for (const key in obj) {
     if (obj.hasOwnProperty(key)) {
       let newVal = shuffledArr.find(
-        (val) => val !== key && !Object.values(obj).includes(val)
+        (val) =>
+          val !== key && !Object.values(obj).includes(val) && val !== obj[key]
       );
       if (newVal) {
         obj[key] = newVal;
