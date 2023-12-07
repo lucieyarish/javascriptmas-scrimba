@@ -53,3 +53,15 @@ The solution to Day 4 is available here as Scrim: https://scrimba.com/scrim/co5a
 Stretch goals:
 
 - Create a UI with a button to trigger your Secret Santa function and display the results
+
+## Day 7: XMas Present Wishlist
+
+- Add items to the wishlist array
+- Iterate over the wishlist array
+- Display your wishlist on the page
+- Style the wishlist with CSS
+
+Stretch goals:
+
+- Provide a way to add / remove wishlist items
+- Make each array item an object with the item's name, description and a link to where it can be purchased
