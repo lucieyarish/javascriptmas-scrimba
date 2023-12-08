@@ -65,3 +65,9 @@ Stretch goals:
 
 - Provide a way to add / remove wishlist items
 - Make each array item an object with the item's name, description and a link to where it can be purchased
+
+## Day 8: Animated Progress Bar
+
+- Build a CSS animation of a progress bar filling to 100%. The animation should run continuously, with a small pause when the bar is filled 100%
+- The progress bar begins with 1 color, turns to the 2nd color at 50% full, and to the 3rd color when complete
+- Use CSS only
