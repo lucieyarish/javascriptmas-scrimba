@@ -71,3 +71,11 @@ Stretch goals:
 - Build a CSS animation of a progress bar filling to 100%. The animation should run continuously, with a small pause when the bar is filled 100%
 - The progress bar begins with 1 color, turns to the 2nd color at 50% full, and to the 3rd color when complete
 - Use CSS only
+
+## Day 9: Animated Progress Bar
+
+- When a user hits submit, dialogModal should be hidden.
+- Use the inputted text to generate an image for the e-card using an AI model. Make sure the image is square.
+- Render the image to imageContainer.
+
+The solution to Day 4 is available here as Scrim: https://scrimba.com/scrim/co9fc449f9072d453490e145e
